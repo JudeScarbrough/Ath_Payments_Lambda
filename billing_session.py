@@ -36,7 +36,7 @@ def billing_session(body):
         # Create a session for the customer portal
         session = stripe.billing_portal.Session.create(
             customer=stripe_customer_id,
-            return_url=f'https://{appUrl}/settings',
+            return_url=f'{appUrl}',
         )
 
         return {

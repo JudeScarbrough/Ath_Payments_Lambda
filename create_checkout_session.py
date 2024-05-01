@@ -24,8 +24,8 @@ def create_checkout_session(body):
                 'quantity': 1,
             }],
             customer_email=user_email,
-            success_url=f'https://{appUrl}',
-            cancel_url=f'https://{appUrl}',
+            success_url=f'{appUrl}',
+            cancel_url=f'{appUrl}',
         )
 
         session_url = checkout_session.url
